@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .formulario-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; 
+            margin-top: 20px; 
+        }
+
+        .imagen-izquierda,
+        .formulario {
+            width: 45%;
+        }
+
+        .imagen-izquierda img {
+            max-width: 100%; 
+            height: auto; 
+        }
+
+        @media screen and (max-width: 768px) {
+            .formulario-container {
+                flex-direction: column; 
+            }
+
+            .imagen-izquierda,
+            .formulario {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../logo/logo.jpg" width="100" height="100" alt="logo_de_máquina_de_tatuaje."></a>
+            <h2><a href="../index.html" class="name-company">Tattoo</a></h2>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="dudas.html">Dudas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="contacto">Contactanos</h2>
+    <div class="formulario-container">
+        <div class="imagen-izquierda">
+            <img src="../logo/banners.jpg" alt="banner_izquierdo" width="300" height="500">
+        </div>
+        <div class="formulario">
+            <form action="#" method="post">
+                <div>
+                    <label for="tipo_cliente">Tipo de Cliente:</label><br>
+                    <select id="tipo_cliente" name="tipo_cliente">
+                        <option value="cliente_regular">Cliente Regular</option>
+                        <option value="cliente_premium">Cliente Premium</option>
+                        <option value="cliente_nuevo">Cliente Nuevo</option>
+                        <option value="tatuador_premiun">Tatuador Premiun</option>
+                        <option value="tatuador_regular">Tatuador Regular</option>
+                        <option value="tatuador_nuevo">Tatuador Nuevo </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="requerimiento">Requerimiento:</label><br>
+                    <textarea id="requerimiento" name="requerimiento" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="mail">Mail:</label><br>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <br>
+                <div>
+                    <label for="detalle">Telefono Celular:</label><br>
+                    <input type="number" id="movil" name="movil">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Ingresar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+   <footer>
+    <div class="footer-text">
+      <p>¡Síguenos en nuestras redes sociales para más consejos sobre tatuajes!</p>
+    </div>
+    <div class="social-icons">
+      <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/instagram.png" alt="icono_de_instagram" width="30" height="30"></a>
+      <a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/facebook.png" alt="icono_de_facebook" width="30" height="30"></a>
+      <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"><img  src="../iconos/whatsaap.png" alt="whatsapp" width="30" height="30"></a>
+  </footer>
+</body>
+</html>
