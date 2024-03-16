@@ -1,19 +1,14 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;   margin: 0;
+  background-color: #f8f8f8;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
-<<<<<<< HEAD
 body header {
   background-color: #333;
   color: #fff;
-=======
-
-header {
-  background-color: #333; 
-  color: #fff; 
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   padding: 10px;
   text-align: center;
 }
@@ -43,7 +38,6 @@ body header .menu li a {
   text-decoration: none;
   font-size: 18px;
 }
-<<<<<<< HEAD
 body header .menu li a:hover {
   color: #f00;
 }
@@ -52,19 +46,10 @@ body .titulo {
   font-size: 50px;
 }
 body .tatuador-info {
-=======
-
-.menu li a:hover {
-  color: #f00; 
-}
-
-
-.tatuador-info {
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   max-width: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 20px;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
@@ -87,13 +72,7 @@ body .descripcion {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
-<<<<<<< HEAD
 body footer {
-=======
-
-
-footer {
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   background-color: #333;
   color: #fff;
   padding: 0px;
@@ -117,18 +96,11 @@ body footer .social-icons img {
   height: 30px;
   border-radius: 50%;
 }
-<<<<<<< HEAD
 body .tatuador {
-=======
-
-
-.tatuador {
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-<<<<<<< HEAD
 body .tatuador img {
   width: 300px;
   height: 300px;
@@ -138,33 +110,13 @@ body .tatuador img {
   margin-bottom: 10px;
 }
 body .descripcion {
-=======
-
-.tatuador img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.descripcion {
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   font-size: 16px;
-  text-align: center; 
-  margin-top: 10px;
 }
-<<<<<<< HEAD
 body .social-icons a img {
-=======
-
-.social-icons a img {
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
   width: 30px;
   height: 30px;
   margin: 0 5px;
 }
-<<<<<<< HEAD
 body .columna {
   display: flex;
   flex-direction: column;
@@ -181,6 +133,12 @@ body .contenedor-columnas {
 body .columna-izquierda,
 body .columna-derecha {
   flex: 1;
-}/*# sourceMappingURL=estilos.css.map */
-=======
->>>>>>> b7bed257540b6c97d5514147c78f22cecadfcb27
+}
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
