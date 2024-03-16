@@ -3,51 +3,48 @@ body {
   background-color: #f8f8f8;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-
-header {
+body header {
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
 }
-
-.logo img {
+body header .logo img {
   height: 60px;
   width: 60px;
   margin-right: 10px;
   margin-left: 10px;
 }
-
-.name-company {
+body header .name-company {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
 }
-
-.menu {
+body header .menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
-.menu li {
+body header .menu li {
   display: inline;
   margin-right: 20px;
 }
-
-.menu li a {
+body header .menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
 }
-
-.menu li a:hover {
+body header .menu li a:hover {
   color: #f00;
 }
-
-.tatuador-info {
+body .titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+}
+body .tatuador-info {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -56,74 +53,83 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
-
-.gallery {
+body .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
 }
-
-.gallery img {
+body .gallery img {
   max-width: 200px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
-
-.descripcion {
-  margin-top: 20px;
+body .descripcion {
   text-align: justify;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
 }
-
-footer {
+body footer {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-
-.social-icons {
+body footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
-
-.social-icons a {
+body footer .social-icons a {
   margin-right: 10px;
 }
-
-.social-icons img {
+body footer .social-icons img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
-body {
-  text-align: center;
-}
-.tatuador {
+body .tatuador {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tatuador img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover; 
-  border-radius: 10px; 
-  margin-bottom: 10px; 
+body .tatuador img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
-.descripcion {
+body .descripcion {
   font-size: 16px;
 }
-.social-icons a img {
-  width: 30px; 
+body .social-icons a img {
+  width: 30px;
   height: 30px;
-  margin: 0 5px; 
+  margin: 0 5px;
 }
+body .columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .columna .tatuador {
+  margin-bottom: 20px;
+}
+body .contenedor-columnas {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+body .columna-izquierda,
+body .columna-derecha {
+  flex: 1;
+}/*# sourceMappingURL=estilos.css.map */
