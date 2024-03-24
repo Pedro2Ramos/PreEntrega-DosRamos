@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <style>
       .formulario-container {
@@ -18,7 +19,7 @@
           padding: 20px;
           background-color: #f8f8f8;
           border-radius: 10px;
-          margin-bottom: 200px;
+          margin-bottom: 50px;
       }
 
       .card {
@@ -32,9 +33,10 @@
           height: auto;
           border-radius: 10px;
       }
-  </style>
+    </style>
 </head>
 <body>
+
     <header class="header">
         <div class="logo">
             <a href="../index.html"><img src="../logo/logo.jpg" width="100" height="100" alt="Logo de máquina de tatuaje."></a>
@@ -50,40 +52,42 @@
     </header>
     
     <div class="formulario-container">
-      <div class="card" style="width: 18rem;">
-        <img src="../logo/mujertatuada.jpg" class="card-img-top" alt="mujerocontatuajes">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card" style="width: 18rem;">
+            <img src="../logo/mujertatuada.jpg" class="card-img-top" alt="mujerocontatuajes">
+            <div class="card-body">
+                <h5 class="card-title">Nosotros</h5>
+                <p class="card-text">Si estás buscando un tatuador cerca de tu casa, con una ubicación que te sea cómoda, estás en el lugar correcto. En caso de querer conocer más, haz clic en 'Preguntas Frecuentes'.</p>
+                <a href="./dudas.html" class="btn btn-primary aling-right">Preguntas Frecuentes</a>
+            </div>
         </div>
-      </div>
-      <form action="#" method="post" class="formulario">
-        <h2>Iniciar sesión</h2>
-        <div>
-          <label for="usuario">Usuario:</label><br>
-          <input type="text" id="usuario" name="usuario">
-        </div>
-        <br>
-        <div>
-          <label for="contrasena">Contraseña:</label><br>
-          <input type="password" id="contrasena" name="contrasena">
-        </div>
-        <br>
-        <div>
-          <input type="submit" value="Ingresar">
-        </div>
-      </form>
-    </div>
+        <form action="#" method="post" class="formulario">
+            <h2>Iniciar sesión</h2>
+            <div>
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+            <br>
+            <div>
+                <label for="contrasena">Contraseña:</label><br>
+                <input type="password" id="contrasena" name="contrasena">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Ingresar">
+            </div>
+        </form>
+    </div>  
        
-   <footer>
-    <div class="footer-text">
-      <p>¡Síguenos en nuestras redes sociales para más consejos sobre tatuajes!</p>
-    </div>
-    <div class="social-icons">
-      <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/instagram.png" alt="icono_de_instagram" width="30" height="30"></a>
-      <a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/facebook.png" alt="icono_de_Facebook" width="30" height="30"></a>
-      <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"><img  src="../iconos/whatsaap.png" alt="whatsapp" width="30" height="30"></a>
-  </footer>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>¡Síguenos en nuestras redes sociales para más consejos sobre tatuajes!</p>
+        </div>
+        <div class="social-icons">
+            <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/instagram.png" alt="icono_de_instagram" width="30" height="30"></a>
+            <a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/facebook.png" alt="icono_de_Facebook" width="30" height="30"></a>
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"><img  src="../iconos/whatsaap.png" alt="whatsapp" width="30" height="30"></a>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -12,19 +12,43 @@
 
         .formulario-container {
             display: flex;
-            justify-content: space-between;
             align-items: flex-start; 
-            margin-top: 20px; 
+            margin-top: 150px;
+            margin-bottom: 124px;
         }
 
         .imagen-izquierda,
         .formulario {
-            width: 45%;
+            width: 100%;
         }
 
         .imagen-izquierda img {
             max-width: 100%; 
             height: auto; 
+        }
+
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario input[type="number"],
+        .formulario textarea,
+        .formulario select {
+            width: 80%; 
+            margin-bottom: 10px; 
+            padding: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .formulario input[type="submit"] {
+            width: 50%; 
+            padding: 10px; 
+            border: none; 
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px; 
+            cursor: pointer; 
         }
 
         @media screen and (max-width: 768px) {
@@ -56,7 +80,7 @@
     <h2 class="contacto">Contactanos</h2>
     <div class="formulario-container">
         <div class="imagen-izquierda">
-            <img src="../logo/banners.jpg" alt="banner_izquierdo" width="300" height="500">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.7237833473!2d-58.38142772557511!3d-34.59727795715591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9e9161781%3A0xf747946a6957dbba!2sTorre%20Bellini%20Esmeralda%2C%20Microcentro!5e0!3m2!1ses-419!2sar!4v1711313437171!5m2!1ses-419!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="formulario">
             <form action="#" method="post">
@@ -73,11 +97,6 @@
                 </div>
                 <br>
                 <div>
-                    <label for="requerimiento">Requerimiento:</label><br>
-                    <textarea id="requerimiento" name="requerimiento" rows="4" cols="50"></textarea>
-                </div>
-                <br>
-                <div>
                     <label for="mail">Mail:</label><br>
                     <input type="email" id="mail" name="mail">
                 </div>
@@ -88,20 +107,26 @@
                 </div>
                 <br>
                 <div>
+                    <label for="requerimiento">Requerimiento:</label><br>
+                    <textarea id="requerimiento" name="requerimiento" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+                <div>
                     <input type="submit" value="Ingresar">
                 </div>
             </form>
         </div>
     </div>
 
-   <footer>
-    <div class="footer-text">
-      <p>¡Síguenos en nuestras redes sociales para más consejos sobre tatuajes!</p>
-    </div>
-    <div class="social-icons">
-      <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/instagram.png" alt="icono_de_instagram" width="30" height="30"></a>
-      <a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/facebook.png" alt="icono_de_facebook" width="30" height="30"></a>
-      <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"><img  src="../iconos/whatsaap.png" alt="whatsapp" width="30" height="30"></a>
-  </footer>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>¡Síguenos en nuestras redes sociales para más consejos sobre tatuajes!</p>
+        </div>
+        <div class="social-icons">
+            <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/instagram.png" alt="icono_de_instagram" width="30" height="30"></a>
+            <a href="http://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../iconos/facebook.png" alt="icono_de_facebook" width="30" height="30"></a>
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener"><img  src="../iconos/whatsaap.png" alt="whatsapp" width="30" height="30"></a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,13 +1,19 @@
+$color-background: #f8f8f8;
+$color-header-bg: #333;
+$color-header-text: #fff;
+$color-footer-bg: #0a0a0a;
+$color-footer-text: #ffffff;
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: $color-background;
     margin: 0;
     padding: 0;
     text-align: center;
 
     header {
-        background-color: #333;
-        color: #fff;
+        background-color: $color-header-bg;
+        color: $color-header-text;
         padding: 10px;
         text-align: center;
 
@@ -22,7 +28,7 @@ body {
             font-size: 24px;
             font-weight: bold;
             text-decoration: none;
-            color: #fff;
+            color: $color-header-text;
         }
 
         .menu {
@@ -35,7 +41,7 @@ body {
                 margin-right: 20px;
 
                 a {
-                    color: #fff;
+                    color: $color-header-text;
                     text-decoration: none;
                     font-size: 18px;
 
@@ -47,52 +53,45 @@ body {
         }
     }
 
-    .titulo {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 50px;
-    }
-
-    .tatuador-info {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
-    }
-
-    .gallery {
+    .formulario-container {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 20px;
+        align-items: flex-start;
+        margin-top: 150px;
+        margin-bottom: 124px;
+    }
 
-        img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    .imagen-izquierda,
+    .formulario {
+        width: 100%;
+    }
+
+    .imagen-izquierda img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .formulario-container {
+            flex-direction: column;
+        }
+
+        .imagen-izquierda,
+        .formulario {
+            width: 100%;
         }
     }
 
-    .descripcion {
-        text-align: justify;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-    }
-
     footer {
-        background-color: #333;
-        color: #fff;
-        padding: 0px;
+        background-color: $color-footer-bg;
+        color: $color-footer-text;
+        padding: 10px 0;
         text-align: center;
-        position: fixed;
-        bottom: 0;
+        position: fixed; /* Fijar el footer */
+        bottom: 0; /* Colocar en la parte inferior */
         left: 0;
         width: 100%;
-        margin-top: 100px; ;
+        z-index: 999;
 
         .social-icons {
             display: flex;
@@ -111,62 +110,58 @@ body {
             }
         }
     }
+}
 
-    .tatuador {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.btn-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background: #333;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 
-        img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-    }
-
-    .descripcion {
-        font-size: 16px;
-    }
-
-    .social-icons a img {
+    img {
         width: 30px;
-        height: 30px;
-        margin: 0 5px;
+        height: auto;
+        margin-right: 5px;
     }
+}
 
-    // Estilos para las columnas
-    .columna {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.faq-container {
+    padding: 0 30px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
 
-        .tatuador {
-            margin-bottom: 20px;
-        }
-    }
+.contenedor-columnas {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 100px;
+}
 
-    .contenedor-columnas {
-        display: flex;
-        flex-direction: row-reverse; // Cambio la dirección de la fila
-        gap: 10px;
-    }
+.columna-izquierda,
+.columna-central,
+.columna-derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .columna-izquierda,
-    .columna-derecha {
-        flex: 1;
-    }
+.tatuador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 
-    @media only screen and (max-width: 768px) {
-        /* Define estilos específicos para dispositivos pequeños */
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* Define estilos específicos para dispositivos medianos */
-    }
-
-    @media only screen and (min-width: 1024px) {
-        /* Define estilos específicos para dispositivos grandes */
+    img {
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
     }
 }
